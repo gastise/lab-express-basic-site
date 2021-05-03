@@ -1,0 +1,66 @@
+<h1 class="h1home" >My Stats After {{LaLiga.length}} Incredible Seasons</h1>
+
+<div class="big-box">
+
+<div class="club-box">
+
+<h2>{{club}}</h2>
+
+<h3>La Liga</h3>
+
+{{#each LaLiga}}
+
+<div class="step">
+    <p><b>Year: {{this.year}}</b> Matches: {{this.matches}} Goals: {{this.goals}} Assists: {{this.assists}}</p>
+</div>
+
+{{/each}}
+
+<h3>UEFA Champions League</h3>
+
+{{#each ChampionsLeague}}
+
+<div class="step">
+    <p><b>Year: {{this.clYear}}</b> Matches: {{this.clMatches}} Goals: {{this.clGoals}} Assists: {{this.clAssists}}</p>
+</div>
+
+{{/each}}
+
+<h3>Copa del Rey</h3>
+
+{{#each CopadelRey}}
+
+<div class="step">
+    <p><b>Year: {{this.crYear}}</b> Matches: {{this.crMatches}} Goals: {{this.crGoals}} Assists: {{this.crAssists}}</p>
+</div>
+
+{{/each}}
+
+</div>
+
+<div class="national-box">
+    <h2>{{national}}</h2>
+
+    <h3>World Cup</h3>
+
+{{#each WorldCup}}
+
+<div class="step">
+    <p><b>Year: {{this.wcYear}}</b> Matches: {{this.wcMatches}} Goals: {{this.wcGoals}} Assists: {{this.wcAssists}}</p>
+</div>
+
+{{/each}}
+
+ <h3>Copa America</h3>
+
+{{#each CopaAmerica}}
+
+<div class="step">
+    <p><b>Year: {{this.caYear}}</b> Matches: {{this.caMatches}} Goals: {{this.caGoals}} Assists: {{this.caAssists}}</p>
+</div>
+
+{{/each}}
+    
+</div>
+
+</div>
